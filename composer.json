@@ -26,8 +26,7 @@
     "require": {
         "php": ">=5.6",
         "ext-dom": "*",
-        "ext-zip": "*",
-        "epubli/common": "master"
+        "hans-thomas/common": "dev-master"
     },
     "minimum-stability": "dev",
     "require-dev": {
@@ -37,11 +36,5 @@
         "psr-4": {
             "Epubli\\Epub\\": "src/"
         }
-    },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/epubli/common.git"
-        }
-    ]
+    }
 }
