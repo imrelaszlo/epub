@@ -10,26 +10,10 @@ Additional functionality includes reading the TOC/spine structure of EPUBs and e
 
 ### Installation ###
 
-In your [composer](https://getcomposer.org/).json include the following:
-
-```json
-{
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/epubli/epub.git"
-        }
-    ],
-    "require": {
-        "epubli/epub": "dev-master"
-    }
-}
-```
-Then do:
+Using composer:
 
 ```shell
-
-$ composer install
+composer require hans-thomas/epub
 ```
 
 
