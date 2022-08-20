@@ -176,7 +176,6 @@ class Item
             while (($line = fgets($this->dataHandle)) !== false) {
                 $this->data .= $line;
             }
-            fclose($this->dataHandle);
         }
 
         return $this->data;
@@ -190,5 +189,15 @@ class Item
     public function getSize()
     {
         return $this->size ?: strlen($this->getData());
+    }
+    
+    /**
+     * Close the corresponding file handler.
+     *
+     * @return bool
+     */
+    public function close()
+    {
+        return fclose($this->dataHandle);
     }
 }
