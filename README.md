@@ -59,6 +59,9 @@ foreach ($spine as $spineItem) {
     $navPoints = $toc->findNavPointsForFile($spineItem->getHref());
 
     // Do something useful with the NavPoints.
+    
+    // At the end, don't forget to close the spine item
+    $spineItem->close();
 }
 
 ```
