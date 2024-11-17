@@ -1,5 +1,5 @@
 {
-    "name": "imrelaszlo/epub",
+    "name": "imrelaszlo/epubli-epub",
     "type": "library",
     "description": "A PHP library for reading and manipulating contents and metadata of EPUB files.",
     "keywords": [
@@ -7,7 +7,7 @@
         "PHP",
         "metadata"
     ],
-    "homepage": "https://github.com/epubli/epub",
+    "homepage": "https://github.com/imrelaszlo/epubli-epub",
     "license": "MIT",
     "authors": [
         {
