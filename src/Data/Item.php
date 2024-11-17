@@ -198,6 +198,11 @@ class Item
      */
     public function close()
     {
-        return fclose($this->dataHandle);
+        if (is_resource($this->dataHandle)) {
+            $close = fclose($this->dataHandle);
+            $this->dataHandle = null;
+            return $close;
+        }
+        return false;
     }
 }

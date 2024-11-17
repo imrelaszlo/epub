@@ -130,6 +130,9 @@ class Epub
     {
         $this->zip->addFromString($this->packageDir.$this->packageFile, $this->packageXPath->document->saveXML());
         // close and reopen zip archive
+        foreach ($this->getManifest() as $item) {
+            $item->close();
+        }
         $this->zip->close();
         $this->zip->open($this->filename);
 
