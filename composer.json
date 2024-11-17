@@ -1,5 +1,5 @@
 {
-    "name": "hans-thomas/epub",
+    "name": "imrelaszlo/epub",
     "type": "library",
     "description": "A PHP library for reading and manipulating contents and metadata of EPUB files.",
     "keywords": [
@@ -21,6 +21,10 @@
         {
             "name": "Epubli Developers",
             "email": "devs@epubli.com"
+        },
+        {
+            "name": "Laszlo Imre",
+            "email": "it@imrelaszlo.hu"
         }
     ],
     "require": {
