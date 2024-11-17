@@ -13,6 +13,7 @@ use Iterator;
  *
  * @author Simon Schrape <simon@epubli.com>
  */
+
 class Spine implements Iterator, Countable, ArrayAccess
 {
     /** @var Item */
@@ -152,7 +153,7 @@ class Spine implements Iterator, Countable, ArrayAccess
      * @param int $offset The offset to retrieve.
      * @return Item
      */
-    public function offsetGet($offset)
+    public function offsetGet($offset): Item
     {
         return $this->items[$offset];
     }

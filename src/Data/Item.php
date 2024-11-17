@@ -37,7 +37,7 @@ class Item
      * @param int $size The size of the referenced file.
      * @param string|null $mediaType The media type of the corresponding file. If omitted XHTML is assumed.
      */
-    public function __construct($id, $href, $dataHandle, $size, $mediaType = null)
+    public function __construct($id, $href, $dataCallable, $size, $mediaType = null)
     {
         $this->id = $id;
         $this->href = $href;
